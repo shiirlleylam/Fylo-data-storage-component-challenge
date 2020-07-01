@@ -1,31 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Fylo data storage component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
+  <img class="desktop-bg" src="images/bg-desktop.svg">
+  <div class="container">
+    <div class="contents">
+      <div class="left-container">
+        <div class="logo-container">
+          <img class="logo" src="images/logo.svg" alt="Flyo-svg">
+        </div>
+        <div class="icons-container">
+          <div class="icons">
+            <img class="icon-document" src="images/icon-document.svg" alt="document-svg">
+          </div>
+          <div class="icons">
+            <img class="icon-folder" src="images/icon-folder.svg" alt="folder-svg">
+          </div>
+          <div class="icons">
+            <img class="icon-upload" src="images/icon-upload.svg" alt="upload-svg">
+          </div>
+        </div>
+      </div>
 
-  You’ve used 815 GB of your storage
 
-  185 GB Left
-  
-  0 GB
-  1000 GB
-  
+      <div class="right-container">
+        <div class="notification">
+          <div class="notif-number-container">
+            <h1 class="notif-number">185</h1>
+          </div>
+          <div class="gb-left-container">
+            <p class="gb-left">GB LEFT</p>
+          </div>
+        </div>
+        <div class="notif-triangle">
+        </div>
+        <div class="right-contents">
+          <p class="usage-text">You’ve used</p> <p class="gb-used"> 815 GB</p> <p class="usage-text">of your storage</p>
+          <div class="storage-bar">
+            <div class="used-storage-bar">
+              <div class="storage-ball">
+              </div>
+            </div>
+          </div>
+          <div class="storage-scale">
+            <p class="zero-gb">0 GB</p>
+          </div>
+          <div class="storage-scale">
+            <p class="thousand-gb">1000 GB</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Shirley Lam</a>.
   </div>
 </body>
+
 </html>
